@@ -1,19 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Nav from "./nav.jsx"
-import Section from './section.jsx'
+import Main from './main.jsx';
+import ReactDOM from "react-dom";
 
 class App extends React.Component{
-    constructor(props){
-        super(props);
-    }
-
     render() {
         return (
             <div>
-                <Nav/>
-                <Section game="cards"/>
-                <h1>gn</h1>
+                <Main/>
             </div>
         );
     }
@@ -25,5 +18,3 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('app')
     );
 });
-
-

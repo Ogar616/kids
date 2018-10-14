@@ -1,5 +1,6 @@
 import React from 'react';
-import Cards from './games/cards.jsx'
+import About from './about.jsx';
+import Games from './games.jsx';
 
 class Section extends React.Component{
     constructor(props) {
@@ -7,18 +8,20 @@ class Section extends React.Component{
         this.state = {
 
         }
-    };
+    }
 
-    checkGame = (game) => {
-        const cards = <Cards/>;
-        const game2 = <Game2/>;
-
-        if (game === 'cards') return cards;
+    selectSection = (menu) => {
+        if (menu === 'about') return <About/>;
+        if (menu === 'games') return <Games/>;
     };
 
     render() {
+        const sectionStyle = {height: '45em', border: '1px solid black', textAlign: 'center'};
         return (
-            this.checkGame(this.props.game)
+            <div style={sectionStyle}>
+                {this.selectSection(this.props.menu)}
+            </div>
+
         );
     }
 
