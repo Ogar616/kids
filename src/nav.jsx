@@ -5,16 +5,28 @@ const navStyle = {marginTop: '5em'};
 const ulStyle = {textAlign: 'center', width: '100%'};
 const liStyle = {display: 'inline-block', padding: '1.5em'};
 const aNavStyle = {textDecoration: 'none', fontSize: '2em'};
+const navList = ['about', 'games', 'blog', 'element', 'contact'];
 
 class Nav extends React.Component{
     constructor(props){
         super(props);
         this.state = {
+            chosen: 'about'
         }
     };
 
-    handleClick = () => {
-        if (typeof this.props.selectMenu === 'function') this.props.selectMenu(this.key);
+    handleClickAbout = () => {
+        if (typeof this.props.selectMenu === 'function') this.props.selectMenu('about');
+
+    };
+
+    handleClickGames = () => {
+        if (typeof this.props.selectMenu === 'function') this.props.selectMenu('games');
+
+    };
+
+    handleClickContact = () => {
+        if (typeof this.props.selectMenu === 'function') this.props.selectMenu('contact');
 
     };
 
@@ -23,11 +35,9 @@ class Nav extends React.Component{
             <div>
                 <nav style={navStyle}>
                     <ul style={ulStyle}>
-                        <li style={liStyle} key={'about'} onClick={this.handleClick.bind(this)}><a style={aNavStyle}  href="#">O mnie</a></li>
-                        <li style={liStyle} key={'games'} onClick={this.handleClick.bind(this)}><a style={aNavStyle}  href="#">Gry edukacyjne</a></li>
-                        <li style={liStyle}><a style={aNavStyle} href="#">Blog</a></li>
-                        <li style={liStyle}><a style={aNavStyle} href="#">Element</a></li>
-                        <li style={liStyle}><a style={aNavStyle} href="#">Kontakt</a></li>
+                        <li style={liStyle} key={'about'} onClick={this.handleClickAbout.bind(this)}><a style={aNavStyle} key={'about'}  href="#">O mnie</a></li>
+                        <li style={liStyle} key={'games'} onClick={this.handleClickGames.bind(this)}><a style={aNavStyle} key={'games'} href="#">Gry edukacyjne</a></li>
+                        <li style={liStyle} onClick={this.handleClickContact.bind(this)}><a style={aNavStyle} href="#">Kontakt</a></li>
                     </ul>
                     {this.state.counter}
                 </nav>

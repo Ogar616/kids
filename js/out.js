@@ -538,7 +538,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMProperty = __webpack_require__(13);
+var DOMProperty = __webpack_require__(14);
 var ReactDOMComponentFlags = __webpack_require__(58);
 
 var invariant = __webpack_require__(1);
@@ -1504,6 +1504,16 @@ module.exports = ReactUpdates;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(17);
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1775,7 +1785,7 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1986,16 +1996,6 @@ var DOMProperty = {
 
 module.exports = DOMProperty;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(17);
-
 
 /***/ }),
 /* 15 */
@@ -3358,7 +3358,7 @@ module.exports = EventPluginHub;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 var getEventTarget = __webpack_require__(36);
 
@@ -7869,7 +7869,7 @@ module.exports = CSSProperty;
 
 
 
-var DOMProperty = __webpack_require__(13);
+var DOMProperty = __webpack_require__(14);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(8);
 
@@ -9046,7 +9046,7 @@ module.exports = getActiveElement;
 var _prodInvariant = __webpack_require__(3);
 
 var DOMLazyTree = __webpack_require__(20);
-var DOMProperty = __webpack_require__(13);
+var DOMProperty = __webpack_require__(14);
 var React = __webpack_require__(17);
 var ReactBrowserEventEmitter = __webpack_require__(32);
 var ReactCurrentOwner = __webpack_require__(10);
@@ -9608,7 +9608,7 @@ module.exports = getHostComponentFromComposite;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(84);
-module.exports = __webpack_require__(191);
+module.exports = __webpack_require__(193);
 
 
 /***/ }),
@@ -9620,7 +9620,7 @@ module.exports = __webpack_require__(191);
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(14);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -12248,7 +12248,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(14);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -12260,7 +12260,7 @@ var _section = __webpack_require__(187);
 
 var _section2 = _interopRequireDefault(_section);
 
-var _footer = __webpack_require__(190);
+var _footer = __webpack_require__(192);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -12281,12 +12281,11 @@ var Main = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
         _this.onSelectMenu = function (menu) {
-            console.log("onselsect w app");
             _this.setState({ menu: menu });
         };
 
         _this.state = {
-            menu: "about"
+            menu: "games"
         };
         return _this;
     }
@@ -12298,7 +12297,6 @@ var Main = function (_React$Component) {
                 'div',
                 null,
                 _react2.default.createElement(_nav2.default, { selectMenu: this.onSelectMenu }),
-                this.state.menu,
                 _react2.default.createElement(_section2.default, { menu: this.state.menu }),
                 _react2.default.createElement(_footer2.default, null)
             );
@@ -12323,7 +12321,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(14);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -12343,6 +12341,7 @@ var navStyle = { marginTop: '5em' };
 var ulStyle = { textAlign: 'center', width: '100%' };
 var liStyle = { display: 'inline-block', padding: '1.5em' };
 var aNavStyle = { textDecoration: 'none', fontSize: '2em' };
+var navList = ['about', 'games', 'blog', 'element', 'contact'];
 
 var Nav = function (_React$Component) {
     _inherits(Nav, _React$Component);
@@ -12352,11 +12351,21 @@ var Nav = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
 
-        _this.handleClick = function () {
-            if (typeof _this.props.selectMenu === 'function') _this.props.selectMenu(_this.key);
+        _this.handleClickAbout = function () {
+            if (typeof _this.props.selectMenu === 'function') _this.props.selectMenu('about');
         };
 
-        _this.state = {};
+        _this.handleClickGames = function () {
+            if (typeof _this.props.selectMenu === 'function') _this.props.selectMenu('games');
+        };
+
+        _this.handleClickContact = function () {
+            if (typeof _this.props.selectMenu === 'function') _this.props.selectMenu('contact');
+        };
+
+        _this.state = {
+            chosen: 'about'
+        };
         return _this;
     }
 
@@ -12374,43 +12383,25 @@ var Nav = function (_React$Component) {
                         { style: ulStyle },
                         _react2.default.createElement(
                             'li',
-                            { style: liStyle, key: 'about', onClick: this.handleClick.bind(this) },
+                            { style: liStyle, key: 'about', onClick: this.handleClickAbout.bind(this) },
                             _react2.default.createElement(
                                 'a',
-                                { style: aNavStyle, href: '#' },
+                                { style: aNavStyle, key: 'about', href: '#' },
                                 'O mnie'
                             )
                         ),
                         _react2.default.createElement(
                             'li',
-                            { style: liStyle, key: 'games', onClick: this.handleClick.bind(this) },
+                            { style: liStyle, key: 'games', onClick: this.handleClickGames.bind(this) },
                             _react2.default.createElement(
                                 'a',
-                                { style: aNavStyle, href: '#' },
+                                { style: aNavStyle, key: 'games', href: '#' },
                                 'Gry edukacyjne'
                             )
                         ),
                         _react2.default.createElement(
                             'li',
-                            { style: liStyle },
-                            _react2.default.createElement(
-                                'a',
-                                { style: aNavStyle, href: '#' },
-                                'Blog'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            { style: liStyle },
-                            _react2.default.createElement(
-                                'a',
-                                { style: aNavStyle, href: '#' },
-                                'Element'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            { style: liStyle },
+                            { style: liStyle, onClick: this.handleClickContact.bind(this) },
                             _react2.default.createElement(
                                 'a',
                                 { style: aNavStyle, href: '#' },
@@ -13214,7 +13205,7 @@ module.exports = FallbackCompositionState;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 /**
  * @interface Event
@@ -13253,7 +13244,7 @@ module.exports = SyntheticCompositionEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 /**
  * @interface Event
@@ -13298,7 +13289,7 @@ var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 var inputValueTracking = __webpack_require__(64);
 var getEventTarget = __webpack_require__(36);
@@ -14433,7 +14424,7 @@ module.exports = EnterLeaveEventPlugin;
 
 
 
-var DOMProperty = __webpack_require__(13);
+var DOMProperty = __webpack_require__(14);
 
 var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -15117,7 +15108,7 @@ var AutoFocusUtils = __webpack_require__(127);
 var CSSPropertyOperations = __webpack_require__(128);
 var DOMLazyTree = __webpack_require__(20);
 var DOMNamespaces = __webpack_require__(40);
-var DOMProperty = __webpack_require__(13);
+var DOMProperty = __webpack_require__(14);
 var DOMPropertyOperations = __webpack_require__(70);
 var EventPluginHub = __webpack_require__(22);
 var EventPluginRegistry = __webpack_require__(27);
@@ -20072,7 +20063,7 @@ module.exports = getUnboundedScrollPosition;
 
 
 
-var DOMProperty = __webpack_require__(13);
+var DOMProperty = __webpack_require__(14);
 var EventPluginHub = __webpack_require__(22);
 var EventPluginUtils = __webpack_require__(34);
 var ReactComponentEnvironment = __webpack_require__(43);
@@ -20991,7 +20982,7 @@ var EventPropagators = __webpack_require__(21);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInputSelection = __webpack_require__(79);
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 var getActiveElement = __webpack_require__(80);
 var isTextInputElement = __webpack_require__(65);
@@ -21186,7 +21177,7 @@ var EventPropagators = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(5);
 var SyntheticAnimationEvent = __webpack_require__(168);
 var SyntheticClipboardEvent = __webpack_require__(169);
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 var SyntheticFocusEvent = __webpack_require__(170);
 var SyntheticKeyboardEvent = __webpack_require__(171);
 var SyntheticMouseEvent = __webpack_require__(29);
@@ -21408,7 +21399,7 @@ module.exports = SimpleEventPlugin;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 /**
  * @interface Event
@@ -21450,7 +21441,7 @@ module.exports = SyntheticAnimationEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 /**
  * @interface Event
@@ -21819,7 +21810,7 @@ module.exports = SyntheticTouchEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 /**
  * @interface Event
@@ -22174,7 +22165,7 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 
 
 
-var DOMProperty = __webpack_require__(13);
+var DOMProperty = __webpack_require__(14);
 var EventPluginRegistry = __webpack_require__(27);
 var ReactComponentTreeHook = __webpack_require__(7);
 
@@ -22337,7 +22328,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 
 
 
-var DOMProperty = __webpack_require__(13);
+var DOMProperty = __webpack_require__(14);
 var ReactComponentTreeHook = __webpack_require__(7);
 
 var warning = __webpack_require__(2);
@@ -22432,7 +22423,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(14);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22444,6 +22435,10 @@ var _games = __webpack_require__(189);
 
 var _games2 = _interopRequireDefault(_games);
 
+var _contact = __webpack_require__(191);
+
+var _contact2 = _interopRequireDefault(_contact);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22451,6 +22446,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var sectionStyle = { height: '45em', border: '1px solid black', textAlign: 'center' };
 
 var Section = function (_React$Component) {
     _inherits(Section, _React$Component);
@@ -22463,6 +22460,7 @@ var Section = function (_React$Component) {
         _this.selectSection = function (menu) {
             if (menu === 'about') return _react2.default.createElement(_about2.default, null);
             if (menu === 'games') return _react2.default.createElement(_games2.default, null);
+            if (menu === 'contact') return _react2.default.createElement(_contact2.default, null);
         };
 
         _this.state = {};
@@ -22472,7 +22470,6 @@ var Section = function (_React$Component) {
     _createClass(Section, [{
         key: 'render',
         value: function render() {
-            var sectionStyle = { height: '45em', border: '1px solid black', textAlign: 'center' };
             return _react2.default.createElement(
                 'div',
                 { style: sectionStyle },
@@ -22499,7 +22496,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(14);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22558,9 +22555,13 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(14);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _cards = __webpack_require__(190);
+
+var _cards2 = _interopRequireDefault(_cards);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22570,15 +22571,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var all = _react2.default.createElement(
-    "div",
-    null,
-    _react2.default.createElement(
-        "h1",
-        null,
-        "All"
-    )
-);
+var divStyle = { border: '1px solid black', width: '12em', height: '10em', margin: '3em', display: 'inline-block', textAlign: 'center', paddingTop: '4em', cursor: 'pointer' };
 
 var Games = function (_React$Component) {
     _inherits(Games, _React$Component);
@@ -22588,25 +22581,58 @@ var Games = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Games.__proto__ || Object.getPrototypeOf(Games)).call(this, props));
 
+        _this.chooseCards = function () {
+            _this.setState({ game: 'cards' });
+        };
+
         _this.state = {
-            game: "all"
+            game: 'cards'
         };
         return _this;
     }
 
     _createClass(Games, [{
-        key: "selectGame",
-        value: function selectGame(select) {
-            if (select === "all") return all;
-        }
-    }, {
-        key: "render",
+        key: 'render',
         value: function render() {
-            return _react2.default.createElement(
-                "div",
-                null,
-                this.selectGame(this.state.game)
-            );
+            if (this.state.game === 'all') {
+                return _react2.default.createElement(
+                    'div',
+                    { style: { paddingTop: '2.5em' } },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'game', onClick: this.chooseCards, style: divStyle },
+                        'Cards'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'game', style: divStyle },
+                        'Gra 2'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'game', style: divStyle },
+                        'Gra 3'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'game', style: divStyle },
+                        'Gra 4'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'game', style: divStyle },
+                        'Gra 5'
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'game', style: divStyle },
+                        'Gra 6'
+                    )
+                );
+            }
+            if (this.state.game === 'cards') {
+                return _react2.default.createElement(_cards2.default, null);
+            }
         }
     }]);
 
@@ -22628,7 +22654,193 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(14);
+var _react = __webpack_require__(12);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _card = __webpack_require__(194);
+
+var _card2 = _interopRequireDefault(_card);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var shuffle = function shuffle(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var _ref = [array[j], array[i]];
+        array[i] = _ref[0];
+        array[j] = _ref[1];
+    }
+    return array;
+};
+
+var containerStyle = { border: '2px solid white' };
+var gameStyle = { display: 'inline-block', width: '70%', height: '100%', border: '1px solid red', margin: '0', marginTop: '0', position: 'relative', padding: '6em' };
+var panelStyle = { display: 'inline-block', width: '30%', height: '100%', border: '1px solid blue', margin: '0', paddingTop: '0', position: 'relative' };
+var pointsStyle = { height: '3em', border: '1px solid yellow', position: 'absolute' };
+var puppetStyle = { border: '1px solid green', height: '100%', position: 'relative' };
+
+var cards = ['1', '2', '3', '4', '5', '6', '7', '8'];
+var cardsDoubled = cards.concat(cards);
+shuffle(cardsDoubled);
+
+var Cards = function (_React$Component) {
+    _inherits(Cards, _React$Component);
+
+    function Cards(props) {
+        _classCallCheck(this, Cards);
+
+        var _this = _possibleConstructorReturn(this, (Cards.__proto__ || Object.getPrototypeOf(Cards)).call(this, props));
+
+        _this.showCard = function (v, i) {
+            if (_this.state.visibleCount < 2) {
+                _this.setState({ visibleCount: _this.state.visibleCount++ });
+            } else _this.setState({ visibleCount: 1 });
+        };
+
+        _this.state = {
+            points: 1231,
+            visibility: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            visibleCount: 0
+        };
+        return _this;
+    }
+
+    _createClass(Cards, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var cardsShow = cardsDoubled.map(function (e, i) {
+                return _react2.default.createElement(_card2.default, { number: e,
+                    visible: _this2.state.visibility[i],
+                    changeVisibility: _this2.showCard.bind(_this2),
+                    key: i });
+            });
+            return _react2.default.createElement(
+                'div',
+                { style: { textAlign: 'center', height: '100%', position: 'relative' } },
+                _react2.default.createElement(
+                    'h1',
+                    null,
+                    'CARDS GAME'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'cards', style: gameStyle },
+                    _react2.default.createElement(
+                        'div',
+                        { style: containerStyle },
+                        cardsShow
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'panel', style: panelStyle },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'points', style: pointsStyle },
+                        'Points: ',
+                        _react2.default.createElement('br', null),
+                        this.state.points
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'puppet', style: puppetStyle },
+                        'Puppet'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Cards;
+}(_react2.default.Component);
+
+exports.default = Cards;
+
+/***/ }),
+/* 191 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(12);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = function (_React$Component) {
+    _inherits(Contact, _React$Component);
+
+    function Contact() {
+        _classCallCheck(this, Contact);
+
+        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+    }
+
+    _createClass(Contact, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { style: { textAlign: 'center' } },
+                'Marlena Sobczyk ',
+                _react2.default.createElement('br', null),
+                'Olchowa xxxx ',
+                _react2.default.createElement('br', null),
+                '41-806 Zabrze ',
+                _react2.default.createElement('br', null),
+                '796-752-885 ',
+                _react2.default.createElement('br', null),
+                _react2.default.createElement(
+                    'a',
+                    { href: '' },
+                    'marlenkak90@wp.pl'
+                )
+            );
+        }
+    }]);
+
+    return Contact;
+}(_react2.default.Component);
+
+exports.default = Contact;
+
+/***/ }),
+/* 192 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -22666,7 +22878,7 @@ var Footer = function (_React$Component) {
 exports.default = Footer;
 
 /***/ }),
-/* 191 */
+/* 193 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -22688,6 +22900,86 @@ module.exports = {
     }
 };
 
+
+/***/ }),
+/* 194 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(12);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var cardVisibleStyle = { display: 'inline-block', width: '4.5em', height: '4.5em', margin: '1em', border: '1px solid black', position: 'relative', paddingTop: '2em' };
+var cardInvisibleStyle = { display: 'inline-block', width: '4.5em', height: '4.5em', margin: '1em', border: '1px solid black', backgroundColor: 'black', position: 'relative', paddingTop: '2em' };
+
+var Card = function (_React$Component) {
+    _inherits(Card, _React$Component);
+
+    function Card(props) {
+        _classCallCheck(this, Card);
+
+        var _this = _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).call(this, props));
+
+        _this.changeVisibility = function () {
+            if (_this.state.isVisible === 0) {
+                _this.setState({ isVisible: 1 });
+                _this.props.changeVisibility(_this.state.isVisible, _this.props.key);
+            } else _this.setState({ isVisible: 0 });
+        };
+
+        _this.state = {
+            isVisible: _this.props.visible
+        };
+        return _this;
+    }
+
+    _createClass(Card, [{
+        key: 'render',
+
+        //
+        // countVisible = () => {
+        //     let visible = this.state.isVisible ? 1 : 0;
+        //     if (typeof this.props.selectMenu === 'function') this.props.count(visible)
+        // };
+
+
+        value: function render() {
+            if (this.state.isVisible === 0) {
+                return _react2.default.createElement(
+                    'div',
+                    { style: cardInvisibleStyle,
+                        onClick: this.changeVisibility },
+                    this.props.number
+                );
+            } else return _react2.default.createElement(
+                'div',
+                { style: cardVisibleStyle, onClick: this.changeVisibility },
+                this.props.number
+            );
+        }
+    }]);
+
+    return Card;
+}(_react2.default.Component);
+
+exports.default = Card;
 
 /***/ })
 /******/ ]);
