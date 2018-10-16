@@ -3,7 +3,7 @@ import About from './about.jsx';
 import Games from './games.jsx';
 import Contact from './contact.jsx';
 
-const sectionStyle = {height: '45em', border: '1px solid black', textAlign: 'center'};
+const sectionStyle = {height: '45em', border: '1px solid black'};
 
 class Section extends React.Component{
     constructor(props) {

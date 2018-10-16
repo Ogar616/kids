@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa33e2c-34ec-4462-b766-cefcf6b13286" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/contact.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/games/card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/out.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/out.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/games.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/card.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/games/cards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/cards.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/nav.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/section.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/section.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.jsx" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +24,12 @@
         <counts>
           <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,14 +38,14 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
           <entry key="js" value="4" />
-          <entry key="jsx" value="19" />
+          <entry key="jsx" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
           <entry key="HTML" value="2" />
-          <entry key="JSX Harmony" value="19" />
+          <entry key="JSX Harmony" value="23" />
           <entry key="JavaScript" value="4" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -58,14 +55,14 @@
           <entry key="css" value="69" />
           <entry key="html" value="27" />
           <entry key="js" value="97" />
-          <entry key="jsx" value="6051" />
+          <entry key="jsx" value="6342" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="69" />
           <entry key="HTML" value="27" />
-          <entry key="JSX Harmony" value="6051" />
+          <entry key="JSX Harmony" value="6342" />
           <entry key="JavaScript" value="97" />
         </counts>
       </usages-collector>
@@ -76,8 +73,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/games/cards.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="41" />
+            <state relative-caret-position="157">
+              <caret line="12" column="147" lean-forward="true" selection-start-line="12" selection-start-column="147" selection-end-line="12" selection-end-column="147" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/section.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/games.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -88,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/games/card.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="571">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -97,20 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nav.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -127,6 +148,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>con</find>
+      <find>key</find>
+      <find>ke</find>
+      <find>pane</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,11 +170,11 @@
         <option value="$PROJECT_DIR$/src/nav.jsx" />
         <option value="$PROJECT_DIR$/src/contact.jsx" />
         <option value="$PROJECT_DIR$/src/main.jsx" />
-        <option value="$PROJECT_DIR$/src/section.jsx" />
         <option value="$PROJECT_DIR$/style/style.css" />
         <option value="$PROJECT_DIR$/src/games.jsx" />
         <option value="$PROJECT_DIR$/src/games/card.jsx" />
         <option value="$PROJECT_DIR$/src/games/cards.jsx" />
+        <option value="$PROJECT_DIR$/src/section.jsx" />
       </list>
     </option>
   </component>
@@ -184,7 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,6 +240,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,12 +282,13 @@
       <workItem from="1539449274707" duration="2709000" />
       <workItem from="1539452453863" duration="10168000" />
       <workItem from="1539463282581" duration="11563000" />
-      <workItem from="1539518010049" duration="10917000" />
+      <workItem from="1539518010049" duration="11513000" />
+      <workItem from="1539695761536" duration="4103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37077000" />
+    <option name="totallyTimeSpent" value="41776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="83" y="592" width="1837" height="1053" extended-state="6" />
@@ -303,13 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -341,16 +359,6 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/section.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -358,13 +366,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/games.jsx">
+    <entry file="file://$PROJECT_DIR$/src/test.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="126">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nav.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="56" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -378,34 +400,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/src/games/card.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state relative-caret-position="571">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nav.jsx">
+    <entry file="file://$PROJECT_DIR$/src/games.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="56" />
+        <state relative-caret-position="193">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/games/card.jsx">
+    <entry file="file://$PROJECT_DIR$/src/section.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="378">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/games/cards.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="41" />
+        <state relative-caret-position="157">
+          <caret line="12" column="147" lean-forward="true" selection-start-line="12" selection-start-column="147" selection-end-line="12" selection-end-column="147" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

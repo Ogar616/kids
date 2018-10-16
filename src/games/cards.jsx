@@ -11,8 +11,8 @@ const shuffle = (array) => {
 
 const containerStyle = {border: '2px solid white'};
 const gameStyle = {display: 'inline-block', width: '70%', height: '100%', border: '1px solid red', margin: '0', marginTop: '0', position: 'relative', padding: '6em'};
-const panelStyle = {display: 'inline-block', width: '30%', height: '100%', border: '1px solid blue', margin:'0', paddingTop: '0', position: 'relative'};
-const pointsStyle = {height: '3em', border: '1px solid yellow', position: 'absolute'};
+const panelStyle = {display: 'inline-block', width: '30%', height: '100%', border: '1px solid blue', margin:'0', paddingTop: '0', position: 'absolute'};
+const pointsStyle = {height: '3em', border: '1px solid yellow', position: 'absolute', right: '0'};
 const puppetStyle = {border: '1px solid green', height: '100%', position: 'relative'};
 
 
@@ -34,10 +34,19 @@ class Cards extends React.Component{
     }
 
     showCard = (v, i) => {
+        let newVisibility = this.state.visibility;
         if (this.state.visibleCount < 2){
-            this.setState({visibleCount: this.state.visibleCount++})
+            console.log(newVisibility);
+            newVisibility[i] = 0 ? 1 : 0;
+            console.log(newVisibility);
+            this.setState({visibleCount: this.state.visibleCount++, visibility: newVisibility})
+            console.log(this.state.visibility);
         }
-        else  this.setState({visibleCount: 1})
+        else{
+            let newVisibility = this.state.visibility.map(e => 0)
+            console.log(newVisibility);
+            this.setState({visibleCount: 1})
+        }
     };
 
 
@@ -45,10 +54,11 @@ class Cards extends React.Component{
         const cardsShow = cardsDoubled.map((e, i) => <Card number={e}
                                                            visible={this.state.visibility[i]}
                                                            changeVisibility={this.showCard.bind(this)}
-                                                           key={i}/>);
+                                                           key={i}
+                                                           index={i}/>);
         return (
-            <div style={{textAlign: 'center', height: '100%', position: 'relative'}}>
-                <h1>CARDS GAME</h1>
+            <div style={{height: '100%', position: 'relative'}}>
+                <h1 style={{textAlign: 'center'}}>CARDS GAME</h1>
 
                 <div className="cards" style={gameStyle}>
                     <div style={containerStyle}>

@@ -13,8 +13,8 @@ class Card extends React.Component{
 
     changeVisibility = () => {
         if (this.state.isVisible === 0){
-            this.setState({isVisible: 1})
-            this.props.changeVisibility(this.state.isVisible, this.props.key)
+            this.setState({isVisible: 1});
+            this.props.changeVisibility(this.state.isVisible, this.props.index)
         }
         else this.setState({isVisible: 0});
     };
