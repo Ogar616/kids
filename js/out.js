@@ -22704,7 +22704,7 @@ var Cards = function (_React$Component) {
                 console.log(newVisibility);
                 newVisibility[i] = 0 ? 1 : 0;
                 console.log(newVisibility);
-                _this.setState({ visibleCount: _this.state.visibleCount++, visibility: newVisibility });
+                _this.setState({ visibleCount: _this.state.visibleCount++, visibility: newVisibility }, function () {});
                 console.log(_this.state.visibility);
             } else {
                 var _newVisibility = _this.state.visibility.map(function (e) {
@@ -22974,7 +22974,7 @@ exports.default = Footer;
 /***/ (function(module, exports) {
 
 module.exports = {
-    entry: "./src/app.jsx",
+    entry: "./scripts/app.jsx",
     output: { filename: "./js/out.js" },
     devServer: {
         inline: true,

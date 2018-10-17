@@ -1,7 +1,7 @@
 import React from 'react';
-import About from './about.jsx';
-import Games from './games.jsx';
-import Contact from './contact.jsx';
+import About from '../section components/about.jsx';
+import Games from '../section components/games.jsx';
+import Contact from '../section components/contact.jsx';
 
 const sectionStyle = {height: '45em', border: '1px solid black'};
 

@@ -39,7 +39,7 @@ class Cards extends React.Component{
             console.log(newVisibility);
             newVisibility[i] = 0 ? 1 : 0;
             console.log(newVisibility);
-            this.setState({visibleCount: this.state.visibleCount++, visibility: newVisibility})
+            this.setState({visibleCount: this.state.visibleCount++, visibility: newVisibility}, () => {});
             console.log(this.state.visibility);
         }
         else{

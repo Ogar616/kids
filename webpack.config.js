@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./src/app.jsx",
+    entry: "./scripts/app.jsx",
     output: { filename: "./js/out.js" },
     devServer: {
         inline: true,

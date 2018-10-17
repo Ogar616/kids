@@ -1,5 +1,5 @@
 import React from 'react';
-import Cards from "./games/cards.jsx";
+import Cards from "../../games/cards.jsx";
 
 const divStyle = {border: '1px solid black', width: '12em', height: '10em', margin: '3em', display: 'inline-block', textAlign: 'center', paddingTop: '4em', cursor: 'pointer'};
 
