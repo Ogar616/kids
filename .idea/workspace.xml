@@ -3,19 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1aa33e2c-34ec-4462-b766-cefcf6b13286" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/out.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/out.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/about.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components/section components/about.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components/section components/contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components/main components/footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components/section components/games.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/games/card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/cards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/games/cards.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components/main components/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components/main components/nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/components/main components/section.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/games/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/games/card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/games/cards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/games/cards.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,14 +20,15 @@
     <session id="1441005470">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -45,17 +36,17 @@
           <entry key="LICENSE" value="1" />
           <entry key="css" value="3" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="3" />
-          <entry key="js" value="5" />
-          <entry key="jsx" value="33" />
+          <entry key="html" value="4" />
+          <entry key="js" value="6" />
+          <entry key="jsx" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="3" />
-          <entry key="JSX Harmony" value="33" />
-          <entry key="JavaScript" value="5" />
+          <entry key="HTML" value="4" />
+          <entry key="JSX Harmony" value="34" />
+          <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -64,14 +55,14 @@
           <entry key="css" value="69" />
           <entry key="html" value="44" />
           <entry key="js" value="103" />
-          <entry key="jsx" value="6418" />
+          <entry key="jsx" value="6999" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="69" />
           <entry key="HTML" value="44" />
-          <entry key="JSX Harmony" value="6418" />
+          <entry key="JSX Harmony" value="6999" />
           <entry key="JavaScript" value="103" />
         </counts>
       </usages-collector>
@@ -79,23 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/games/cards.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="41" column="106" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/app.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="80">
+              <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="42" selection-end-column="41" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -104,10 +83,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/games/card.jsx">
+        <entry file="file://$PROJECT_DIR$/scripts/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="360">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +97,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="144">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/games/card.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -136,6 +127,8 @@
       <find>key</find>
       <find>ke</find>
       <find>pane</find>
+      <find>new</find>
+      <find>i</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,8 +153,9 @@
         <option value="$PROJECT_DIR$/src/games/card.jsx" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/components/main components/main.jsx" />
-        <option value="$PROJECT_DIR$/scripts/games/cards.jsx" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/scripts/games/cards.jsx" />
+        <option value="$PROJECT_DIR$/scripts/games/card.jsx" />
       </list>
     </option>
   </component>
@@ -182,10 +176,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="83" />
-    <option name="y" value="565" />
-    <option name="width" value="1837" />
-    <option name="height" value="1080" />
+    <option name="x" value="1" />
+    <option name="y" value="18" />
+    <option name="width" value="1919" />
+    <option name="height" value="1062" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -215,7 +209,21 @@
             <path>
               <item name="kids" type="b2602c69:ProjectViewProjectNode" />
               <item name="kids" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kids" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kids" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="section components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kids" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kids" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -272,17 +280,20 @@
       <workItem from="1539452453863" duration="10168000" />
       <workItem from="1539463282581" duration="11563000" />
       <workItem from="1539518010049" duration="11513000" />
-      <workItem from="1539695761536" duration="7972000" />
+      <workItem from="1539695761536" duration="9134000" />
+      <workItem from="1540121502669" duration="533000" />
+      <workItem from="1540122057462" duration="4744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45645000" />
+    <option name="totallyTimeSpent" value="52084000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="592" width="1837" height="1053" extended-state="6" />
+    <frame x="83" y="27" width="1837" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1908226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19753778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -297,10 +308,12 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32893288" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info active="true" anchor="right" id="Remote Host" visible="true" weight="0.3296027" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.3296027" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,20 +333,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.jsx" />
     <entry file="file://$PROJECT_DIR$/scripts/components/main components/nav.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -348,9 +352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -358,23 +359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/section components/games.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -389,21 +373,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/games/card.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -412,20 +386,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/games/cards.jsx">
+    <entry file="file://$PROJECT_DIR$/scripts/components/section components/games.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="41" column="106" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
+        <state relative-caret-position="195">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/out.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="22711" column="19" selection-start-line="22711" selection-start-column="19" selection-end-line="22711" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/app.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/app.jsx">
+    <entry file="file://$PROJECT_DIR$/scripts/games/card.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="630">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/games/cards.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="42" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

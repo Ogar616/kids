@@ -22686,9 +22686,8 @@ var panelStyle = { display: 'inline-block', width: '30%', height: '100%', border
 var pointsStyle = { height: '3em', border: '1px solid yellow', position: 'absolute', right: '0' };
 var puppetStyle = { border: '1px solid green', height: '100%', position: 'relative' };
 
-var cards = ['1', '2', '3', '4', '5', '6', '7', '8'];
-var cardsDoubled = cards.concat(cards);
-shuffle(cardsDoubled);
+var cards = [{ v: true, i: 1 }, { v: false, i: 2 }, { v: false, i: 3 }, { v: false, i: 4 }, { v: false, i: 5 }, { v: false, i: 6 }, { v: false, i: 7 }, { v: false, i: 8 }];
+var cardsDoubled = shuffle(cards.concat(cards));
 
 var Cards = function (_React$Component) {
     _inherits(Cards, _React$Component);
@@ -22698,27 +22697,19 @@ var Cards = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Cards.__proto__ || Object.getPrototypeOf(Cards)).call(this, props));
 
-        _this.showCard = function (v, i) {
-            var newVisibility = _this.state.visibility;
-            if (_this.state.visibleCount < 2) {
-                console.log(newVisibility);
-                newVisibility[i] = 0 ? 1 : 0;
-                console.log(newVisibility);
-                _this.setState({ visibleCount: _this.state.visibleCount++, visibility: newVisibility }, function () {});
-                console.log(_this.state.visibility);
-            } else {
-                var _newVisibility = _this.state.visibility.map(function (e) {
-                    return 0;
-                });
-                console.log(_newVisibility);
-                _this.setState({ visibleCount: 1 });
-            }
+        _this.handleClick = function (i) {
+            var allCards = _this.state.cards;
+            if (allCards[i].v === true) {
+                allCards[i].v = false;
+            } else allCards[i] = true;
+            _this.setState({ cards: allCards });
         };
 
         _this.state = {
             points: 1231,
-            visibility: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            cards: cardsDoubled,
             visibleCount: 0
+            //this.state.cards.filter(e => e.visible = true).length
         };
         return _this;
     }
@@ -22729,9 +22720,9 @@ var Cards = function (_React$Component) {
             var _this2 = this;
 
             var cardsShow = cardsDoubled.map(function (e, i) {
-                return _react2.default.createElement(_card2.default, { number: e,
-                    visible: _this2.state.visibility[i],
-                    changeVisibility: _this2.showCard.bind(_this2),
+                return _react2.default.createElement(_card2.default, { number: e.i,
+                    visible: _this2.state.cards[i].v,
+                    click: _this2.handleClick.bind(_this2),
                     key: i,
                     index: i });
             });
@@ -22813,11 +22804,12 @@ var Card = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).call(this, props));
 
-        _this.changeVisibility = function () {
-            if (_this.state.isVisible === 0) {
-                _this.setState({ isVisible: 1 });
-                _this.props.changeVisibility(_this.state.isVisible, _this.props.index);
-            } else _this.setState({ isVisible: 0 });
+        _this.handleClick = function (i) {
+            var allCards = _this.state.cards;
+            if (allCards[i].v === true) {
+                allCards[i].v = false;
+            } else allCards[i] = true;
+            _this.setState({ cards: allCards });
         };
 
         _this.state = {
@@ -22828,25 +22820,16 @@ var Card = function (_React$Component) {
 
     _createClass(Card, [{
         key: 'render',
-
-        //
-        // countVisible = () => {
-        //     let visible = this.state.isVisible ? 1 : 0;
-        //     if (typeof this.props.selectMenu === 'function') this.props.count(visible)
-        // };
-
-
         value: function render() {
-            if (this.state.isVisible === 0) {
+            if (this.props.visible === false) {
                 return _react2.default.createElement(
                     'div',
-                    { style: cardInvisibleStyle,
-                        onClick: this.changeVisibility },
+                    { style: cardInvisibleStyle, onClick: this.handleClick(this.props.index) },
                     this.props.number
                 );
             } else return _react2.default.createElement(
                 'div',
-                { style: cardVisibleStyle, onClick: this.changeVisibility },
+                { style: cardVisibleStyle },
                 this.props.number
             );
         }

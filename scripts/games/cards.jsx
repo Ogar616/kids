@@ -16,9 +16,9 @@ const pointsStyle = {height: '3em', border: '1px solid yellow', position: 'absol
 const puppetStyle = {border: '1px solid green', height: '100%', position: 'relative'};
 
 
-const cards = ['1', '2', '3', '4', '5', '6', '7', '8'];
-const cardsDoubled = cards.concat(cards);
-shuffle(cardsDoubled);
+const cards = [{v: true, i: 1}, {v: false, i: 2}, {v: false, i: 3}, {v: false, i: 4}, {v: false, i: 5}, {v: false, i: 6}, {v: false, i: 7}, {v: false, i: 8}];
+const cardsDoubled = shuffle(cards.concat(cards));
+
 
 
 
@@ -28,32 +28,27 @@ class Cards extends React.Component{
         super(props);
         this.state = {
             points: 1231,
-            visibility: [0, 0, 0 ,0 ,0 ,0, 0, 0 ,0 ,0 ,0, 0, 0 ,0 ,0, 0],
+            cards: cardsDoubled,
             visibleCount: 0
+            //this.state.cards.filter(e => e.visible = true).length
         }
     }
 
-    showCard = (v, i) => {
-        let newVisibility = this.state.visibility;
-        if (this.state.visibleCount < 2){
-            console.log(newVisibility);
-            newVisibility[i] = 0 ? 1 : 0;
-            console.log(newVisibility);
-            this.setState({visibleCount: this.state.visibleCount++, visibility: newVisibility}, () => {});
-            console.log(this.state.visibility);
+    handleClick = (i) => {
+        let allCards = this.state.cards;
+        if (allCards[i].v === true) {
+            allCards[i].v = false;
         }
-        else{
-            let newVisibility = this.state.visibility.map(e => 0)
-            console.log(newVisibility);
-            this.setState({visibleCount: 1})
-        }
+        else allCards[i] = true;
+        this.setState({cards: allCards});
     };
 
 
+
     render() {
-        const cardsShow = cardsDoubled.map((e, i) => <Card number={e}
-                                                           visible={this.state.visibility[i]}
-                                                           changeVisibility={this.showCard.bind(this)}
+        const cardsShow = cardsDoubled.map((e, i) => <Card number={e.i}
+                                                           visible={this.state.cards[i].v}
+                                                           click={this.handleClick.bind(this)}
                                                            key={i}
                                                            index={i}/>);
         return (

@@ -11,37 +11,29 @@ class Card extends React.Component{
         }
     }
 
-    changeVisibility = () => {
-        if (this.state.isVisible === 0){
-            this.setState({isVisible: 1});
-            this.props.changeVisibility(this.state.isVisible, this.props.index)
+    handleClick = i => {
+        let allCards = this.state.cards;
+        if (allCards[i].v === true) {
+            allCards[i].v = false;
         }
-        else this.setState({isVisible: 0});
+        else allCards[i] = true;
+        this.setState({cards: allCards});
     };
-    //
-    // countVisible = () => {
-    //     let visible = this.state.isVisible ? 1 : 0;
-    //     if (typeof this.props.selectMenu === 'function') this.props.count(visible)
-    // };
 
 
 
 
 
     render() {
-        if (this.state.isVisible === 0){
+        if (this.props.visible === false){
             return(
-                <div style={cardInvisibleStyle}
-                     onClick={
-                    this.changeVisibility
-
-                }>
+                <div style={cardInvisibleStyle} onClick={this.handleClick(this.props.index)}>
                     {this.props.number}
                 </div>
                 )
         }
         else return (
-            <div style={cardVisibleStyle} onClick={this.changeVisibility}>
+            <div style={cardVisibleStyle}>
                 {this.props.number}
             </div>
         );
